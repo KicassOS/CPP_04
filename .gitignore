@@ -1,4 +1,4 @@
 CPP*
 **/*.o
-**/output
+**/output.txt
 **/a.out

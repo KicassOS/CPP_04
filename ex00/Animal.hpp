@@ -6,7 +6,7 @@
 /*   By: pszleper < pszleper@student.42.fr >        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 23:12:14 by pszleper          #+#    #+#             */
-/*   Updated: 2023/05/30 14:51:21 by pszleper         ###   ########.fr       */
+/*   Updated: 2023/05/30 16:06:55 by pszleper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Animal
 			~Animal(void);								// canonical
 
 			virtual void	makeSound(void) const;
-
+			std::string		getType(void) const;
 	protected:
 		std::string	type;
 };

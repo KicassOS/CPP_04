@@ -6,7 +6,7 @@
 /*   By: pszleper < pszleper@student.42.fr >        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/30 14:37:35 by pszleper          #+#    #+#             */
-/*   Updated: 2023/05/30 15:36:30 by pszleper         ###   ########.fr       */
+/*   Updated: 2023/05/30 16:07:35 by pszleper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,3 +43,7 @@ void	WrongAnimal::makeSound(void) const
 	std::cout << "WrongAnimal makes a wrong animal sound" << std::endl;
 }
 
+std::string	WrongAnimal::getType(void) const
+{
+	return (this->type);
+}

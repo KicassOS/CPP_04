@@ -6,7 +6,7 @@
 /*   By: pszleper < pszleper@student.42.fr >        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 23:13:16 by pszleper          #+#    #+#             */
-/*   Updated: 2023/05/30 15:10:35 by pszleper         ###   ########.fr       */
+/*   Updated: 2023/05/30 15:48:51 by pszleper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class Dog : public Animal
 	Dog&	operator=(const Dog& dog_to_copy);	// canonical
 			~Dog(void);								// canonical
 
-			void	makeSound(void) const;
+			virtual void	makeSound(void) const;
 };
 
 #endif

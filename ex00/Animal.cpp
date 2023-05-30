@@ -6,7 +6,7 @@
 /*   By: pszleper < pszleper@student.42.fr >        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 23:12:02 by pszleper          #+#    #+#             */
-/*   Updated: 2023/05/30 15:17:33 by pszleper         ###   ########.fr       */
+/*   Updated: 2023/05/30 16:06:49 by pszleper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,9 @@ Animal::~Animal(void)
 void	Animal::makeSound(void) const
 {
 	std::cout << "Animal makes an animal sound" << std::endl;
+}
+
+std::string	Animal::getType(void) const
+{
+	return (this->type);
 }
