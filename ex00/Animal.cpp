@@ -6,7 +6,7 @@
 /*   By: pszleper < pszleper@student.42.fr >        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 23:12:02 by pszleper          #+#    #+#             */
-/*   Updated: 2023/05/30 16:06:49 by pszleper         ###   ########.fr       */
+/*   Updated: 2023/05/30 18:57:25 by pszleper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ Animal::Animal(const Animal& animal_to_copy)
 
 Animal&	Animal::operator=(const Animal& animal_to_copy)
 {
+	std::cout << "Animal copy assignment constructor called!" << std::endl;
 	if (this == &animal_to_copy)
 		return (*this);
-	std::cout << "Animal copy assignment constructor called!" << std::endl;
 	this->type = animal_to_copy.type;
 	return (*this);
 }

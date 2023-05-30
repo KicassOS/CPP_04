@@ -6,7 +6,7 @@
 /*   By: pszleper < pszleper@student.42.fr >        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/30 14:52:54 by pszleper          #+#    #+#             */
-/*   Updated: 2023/05/30 15:29:58 by pszleper         ###   ########.fr       */
+/*   Updated: 2023/05/30 18:57:32 by pszleper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ Cat::Cat(const Cat& cat_to_copy): Animal()
 
 Cat&	Cat::operator=(const Cat& cat_to_copy)
 {
+	std::cout << "Cat copy assignment constructor called!" << std::endl;
 	if (this == &cat_to_copy)
 		return (*this);
-	std::cout << "Cat copy assignment constructor called!" << std::endl;
 	this->type = cat_to_copy.type;
 	return (*this);
 }
