@@ -1,0 +1,4 @@
+CPP*
+**/*.o
+**/output
+**/a.out
