@@ -6,7 +6,7 @@
 /*   By: pszleper < pszleper@student.42.fr >        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 23:14:13 by pszleper          #+#    #+#             */
-/*   Updated: 2023/05/30 15:10:05 by pszleper         ###   ########.fr       */
+/*   Updated: 2023/06/01 07:43:29 by pszleper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class WrongCat : public WrongAnimal
 			WrongCat(void);								// canonical
 			WrongCat(const WrongCat& cat_to_copy);		// canonical
 	WrongCat&	operator=(const WrongCat& cat_to_copy);	// canonical
-			~WrongCat(void);								// canonical
+			virtual	~WrongCat(void);								// canonical
 
 			void	makeSound(void) const;
 };
